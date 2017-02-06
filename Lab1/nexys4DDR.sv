@@ -60,7 +60,7 @@ module nexys4DDR (
  states_t state, next;
  
  always_ff @(posedge CLK100MHZ)
-     if (btnu_pls)  state <= solid;
+     if (BTNU)  state <= solid;
      else state <= next;
  
  always_comb
@@ -69,17 +69,17 @@ module nexys4DDR (
     case( state )
     solid:
         begin
-            if (btnc_pls) next = oneHz;
+            if (BTNC) next = oneHz;
             else next = solid;
         end
     oneHz:
         begin
-            if (btnc_pls) next = twoHz;
+            if (BTNC) next = twoHz;
             else next = oneHz;
         end   
     twoHz:
         begin
-            if (btnc_pls) next = solid;
+            if (BTNC) next = solid;
             else next = twoHz;
         end
         
@@ -92,9 +92,9 @@ module nexys4DDR (
  //counter for led shift
  logic [3:0] cnt;
  always_ff @(posedge CLK100MHZ)
-    if (btnu_pls) cnt <= 4'd0;
-    else if (btnr_pls) cnt <= cnt - 1; //shift right
-    else if (btnl_pls) cnt <= cnt + 1; //shift left
+    if (BTNU) cnt <= 4'd0;
+    else if (BTNR) cnt <= cnt - 1; //shift right
+    else if (BTNL) cnt <= cnt + 1; //shift left
 
  // use demux to get 16 bits of LED
  logic [15:0] led_shift;
@@ -132,7 +132,7 @@ assign led_shift = 16'b0000000000000001;
     parameter TWICEBAUD = 20;           //2
   
   //clkdiv 
-    logic oneHz_clk, twoHz_clk, solid_clk;
+    logic oneHz_clk, twoHz_clk;
     clkdiv #(.DIVFREQ(BAUD)) U_CD_oneHz(.clk(CLK100MHZ), .reset(BTNU), .sclk(oneHz_clk));
     clkdiv #(.DIVFREQ(TWICEBAUD)) U_CD_twoHz(.clk(CLK100MHZ), .reset(BTNU), .sclk(twoHz_clk));  
    // clkdiv #(.DIVFREQ(100)) U_CD_solid(.clk(CLK100MHZ), .reset(BTNU), .sclk(solid_clk));

@@ -35,8 +35,8 @@ module Nexys4Test();
 
     // clock generator with period=20 time units
     always begin
-        CLK100MHZ = 0;  #5; 
-        CLK100MHZ = 1;  #5 ;
+        CLK100MHZ = 0;  #10; 
+        CLK100MHZ = 1;  #10;
      end
 
     //stimulus
@@ -49,23 +49,20 @@ module Nexys4Test();
 		BTNR = 0;
 	
 	  	// Wait 100 ns for global reset to finish
-		#100;
+		#10;
 	  	@(posedge CLK100MHZ) #1;
 	   	BTNU = 0;
 		BTNC = 1; 	//change in flash mode
-		BTNL = 0;	//lsb led move left 1
+		BTNL = 1;	//lsb led move left 1
 		BTNR = 0;
-		@(posedge CLK100MHZ) #1;
-        //BTNU = 0;
-        //BTNC = 1;     //change in flash mode
-        BTNL = 1;    //lsb led move left 1
-        BTNR = 0;
-        repeat (4000) @(posedge CLK100MHZ) #1;
+		repeat(10) @(posedge CLK100MHZ) #1;
+        BTNL = 0;    //lsb led move left 1
+        BTNR = 1;
+        repeat(10) @(posedge CLK100MHZ) #1;
 		BTNC = 0;
-		BTNL = 0;
-		BTNR = 1;	//led move right 1
-		repeat (40) @(posedge CLK100MHZ) #1;
+		repeat(10) @(posedge CLK100MHZ) #1;
 		BTNU = 1;	//reset led
+		repeat(5) @(posedge CLK100MHZ) #1;
 	  	 $stop;
 	end
    

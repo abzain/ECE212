@@ -6,17 +6,9 @@ Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
 WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv" Line 22. Module nexys4DDR doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=10) doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=20) doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv" Line 22. Module nexys4DDR doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv" Line 19. Module debounce_default doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=10) doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv" Line 31. Module clkdiv(DIVFREQ=20) doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis

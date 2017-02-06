@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 //-----------------------------------------------------------------------------
 // Title         : debounce -- Button debouncer
 // Project       : Lab 7
@@ -22,8 +23,8 @@ module debounce(input logic clk,    //should be synchronized
                 output logic pulse);
 
    parameter DEBOUNCE_TIME_MS = 5;
-   parameter CLKFREQ = 100_000_000;                                             //100_000_000;
-   parameter WAIT_COUNT = DEBOUNCE_TIME_MS*(CLKFREQ/1);      //DEBOUNCE_TIME_MS*(CLKFREQ/1000)
+   parameter CLKFREQ = 100_000_000;                                             
+   parameter WAIT_COUNT = DEBOUNCE_TIME_MS*(CLKFREQ/1000);     
    
    // States for button debouncing
    logic 		     button_state, button_state_next;
