@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/husseinz/Desktop/ECE212/Lab_1/Lab_1.srcs/constrs_1/new/nexys4DDR.xdc rfile:../../../../../ECE212/Lab_1/Lab_1.srcs/constrs_1/new/nexys4DDR.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.xdc rfile:../../../nexys4DDR.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN E3 [get_ports {CLK100MHZ}]
 set_property src_info {type:XDC file:1 line:66 export:INPUT save:INPUT read:READ} [current_design]

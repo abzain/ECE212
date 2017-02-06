@@ -14,35 +14,35 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 1116 
+INFO: Helper process launched with PID 7256 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 316.039 ; gain = 108.113
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 315.496 ; gain = 107.379
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'nexys4DDR' [C:/Users/husseinz/Desktop/ECE212/Lab_1/Lab_1.srcs/sources_1/new/nexys4DDR.sv:22]
+INFO: [Synth 8-638] synthesizing module 'nexys4DDR' [C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv:22]
 	Parameter BAUD bound to: 1 - type: integer 
 	Parameter TWICEBAUD bound to: 2 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/husseinz/Desktop/ECE212/Lab_1/Lab_1.srcs/sources_1/new/debounce.sv:19]
+INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv:19]
 	Parameter DEBOUNCE_TIME_MS bound to: 5 - type: integer 
 	Parameter CLKFREQ bound to: 100000000 - type: integer 
 	Parameter WAIT_COUNT bound to: 500000 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'debounce' (1#1) [C:/Users/husseinz/Desktop/ECE212/Lab_1/Lab_1.srcs/sources_1/new/debounce.sv:19]
-INFO: [Synth 8-226] default block is never used [C:/Users/husseinz/Desktop/ECE212/Lab_1/Lab_1.srcs/sources_1/new/nexys4DDR.sv:108]
-INFO: [Synth 8-638] synthesizing module 'clkdiv' [C:/Users/husseinz/Desktop/ECE212/Lab_1/Lab_1.srcs/sources_1/new/clkdiv.sv:31]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (1#1) [C:/Users/husseinz/Desktop/ECE212/Lab1/debounce.sv:19]
+INFO: [Synth 8-226] default block is never used [C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv:108]
+INFO: [Synth 8-638] synthesizing module 'clkdiv' [C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv:31]
 	Parameter DIVFREQ bound to: 1 - type: integer 
 	Parameter DIVBITS bound to: 26 - type: integer 
 	Parameter CLKFREQ bound to: 100000000 - type: integer 
 	Parameter DIVAMT bound to: 50000000 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'clkdiv' (2#1) [C:/Users/husseinz/Desktop/ECE212/Lab_1/Lab_1.srcs/sources_1/new/clkdiv.sv:31]
-INFO: [Synth 8-638] synthesizing module 'clkdiv__parameterized0' [C:/Users/husseinz/Desktop/ECE212/Lab_1/Lab_1.srcs/sources_1/new/clkdiv.sv:31]
+INFO: [Synth 8-256] done synthesizing module 'clkdiv' (2#1) [C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv:31]
+INFO: [Synth 8-638] synthesizing module 'clkdiv__parameterized0' [C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv:31]
 	Parameter DIVFREQ bound to: 2 - type: integer 
 	Parameter DIVBITS bound to: 26 - type: integer 
 	Parameter CLKFREQ bound to: 100000000 - type: integer 
 	Parameter DIVAMT bound to: 25000000 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'clkdiv__parameterized0' (2#1) [C:/Users/husseinz/Desktop/ECE212/Lab_1/Lab_1.srcs/sources_1/new/clkdiv.sv:31]
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/husseinz/Desktop/ECE212/Lab_1/Lab_1.srcs/sources_1/new/nexys4DDR.sv:149]
-INFO: [Synth 8-256] done synthesizing module 'nexys4DDR' (3#1) [C:/Users/husseinz/Desktop/ECE212/Lab_1/Lab_1.srcs/sources_1/new/nexys4DDR.sv:22]
+INFO: [Synth 8-256] done synthesizing module 'clkdiv__parameterized0' (2#1) [C:/Users/husseinz/Desktop/ECE212/Lab1/clkdiv.sv:31]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv:149]
+INFO: [Synth 8-256] done synthesizing module 'nexys4DDR' (3#1) [C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv:22]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 352.406 ; gain = 144.480
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 352.848 ; gain = 144.730
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -52,45 +52,45 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 352.406 ; gain = 144.480
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 352.848 ; gain = 144.730
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/husseinz/Desktop/ECE212/Lab_1/Lab_1.srcs/constrs_1/new/nexys4DDR.xdc]
-Finished Parsing XDC File [C:/Users/husseinz/Desktop/ECE212/Lab_1/Lab_1.srcs/constrs_1/new/nexys4DDR.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/husseinz/Desktop/ECE212/Lab_1/Lab_1.srcs/constrs_1/new/nexys4DDR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/nexys4DDR_propImpl.xdc].
+Parsing XDC File [C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.xdc]
+Finished Parsing XDC File [C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/nexys4DDR_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/nexys4DDR_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 650.383 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 650.957 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 650.383 ; gain = 442.457
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 650.957 ; gain = 442.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 650.383 ; gain = 442.457
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 650.957 ; gain = 442.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 650.383 ; gain = 442.457
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 650.957 ; gain = 442.840
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "button_state_next" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "sclk" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "sclk" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/husseinz/Desktop/ECE212/Lab_1/Lab_1.srcs/sources_1/new/nexys4DDR.sv:96]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/husseinz/Desktop/ECE212/Lab1/nexys4DDR.sv:96]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 650.383 ; gain = 442.457
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 650.957 ; gain = 442.840
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -180,7 +180,7 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 650.383 ; gain = 442.457
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 650.957 ; gain = 442.840
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -194,9 +194,9 @@ INFO: [Synth 8-5545] ROM "U_CD_twoHz/sclk" won't be mapped to RAM because addres
 INFO: [Synth 8-5545] ROM "U_CD_oneHz/sclk" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
 WARNING: [Synth 8-3917] design nexys4DDR has port led[10] driven by constant 0
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 650.383 ; gain = 442.457
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 650.957 ; gain = 442.840
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 650.383 ; gain = 442.457
+Finished Parallel Reinference  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 650.957 ; gain = 442.840
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -207,9 +207,9 @@ Report RTL Partitions:
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 650.383 ; gain = 442.457
+Finished Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 650.957 ; gain = 442.840
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 650.383 ; gain = 442.457
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 650.957 ; gain = 442.840
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -223,10 +223,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 650.383 ; gain = 442.457
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 650.957 ; gain = 442.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 650.383 ; gain = 442.457
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 650.957 ; gain = 442.840
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -238,16 +238,16 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 650.383 ; gain = 442.457
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 650.957 ; gain = 442.840
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 650.383 ; gain = 442.457
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 650.957 ; gain = 442.840
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 650.383 ; gain = 442.457
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 650.957 ; gain = 442.840
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -264,7 +264,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 650.383 ; gain = 442.457
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 650.957 ; gain = 442.840
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -277,7 +277,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 650.383 ; gain = 442.457
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 650.957 ; gain = 442.840
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -289,25 +289,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 650.383 ; gain = 442.457
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 650.957 ; gain = 442.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 650.383 ; gain = 442.457
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 650.957 ; gain = 442.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 650.383 ; gain = 442.457
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 650.957 ; gain = 442.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 650.383 ; gain = 442.457
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 650.957 ; gain = 442.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -349,11 +349,11 @@ Report Instance Areas:
 |7     |  U_DBN_U    |debounce_2             |    98|
 +------+-------------+-----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 650.383 ; gain = 442.457
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 650.957 ; gain = 442.840
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 650.383 ; gain = 115.547
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 650.383 ; gain = 442.457
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 650.957 ; gain = 115.242
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 650.957 ; gain = 442.840
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 47 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -365,6 +365,6 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 34 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 650.383 ; gain = 415.859
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 650.383 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Feb 01 15:51:51 2017...
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 650.957 ; gain = 416.699
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 650.957 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 06 13:22:57 2017...

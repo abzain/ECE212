@@ -128,8 +128,8 @@ assign led_shift = 16'b0000000000000001;
  `endif 
     
   //blink rate mux
-    parameter BAUD = 1;  // desired frequency in Hz 
-    parameter TWICEBAUD = 2;
+    parameter BAUD = 10;               //1;  // desired frequency in Hz 
+    parameter TWICEBAUD = 20;           //2
   
   //clkdiv 
     logic oneHz_clk, twoHz_clk, solid_clk;
